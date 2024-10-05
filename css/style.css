@@ -95,6 +95,7 @@ body, html {
     position: relative;
 }
 
+
 .hero-slider div {
     position: relative;
 }
@@ -127,9 +128,10 @@ body, html {
 .hero-slider img {
     width: 100%;
     height: 100%;
-    object-fit: contain;
+    object-fit: cover; /* This ensures the image fills the container without leaving empty spaces */
     transition: transform 0.5s ease; 
 }
+
 
 
 .hero-slider div:hover::before {
@@ -457,18 +459,6 @@ body, html {
     }
 }
 
-/* Initial state: Hidden or off-screen */
-.animate-on-scroll {
-    opacity: 0;
-    transform: translateY(50px); 
-    transition: all 0.7s ease-out;
-}
-
-/* Active state: When scrolled into view */
-.animate-on-scroll.animate {
-    opacity: 1;
-    transform: translateY(0); 
-}
 
 
 .hero.animate-on-scroll {
@@ -534,6 +524,13 @@ body, html {
     .hero-text p {
         font-size: 1rem;
     }
+    .hero {
+        height: 60vh; 
+    }
+    
+    .hero-slider img {
+        object-fit: cover; 
+    }
     .contact-section {
         padding: 20px; 
         font-size: 0.9rem; 
@@ -544,5 +541,35 @@ body, html {
     .contact-form {
         padding: 20px;
         font-size: 0.9rem; 
+    }
+    .about-section .row {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+    }
+
+    .about-section .col-md-5 {
+        padding-top: 20px;
+        text-align: center;
+    }
+
+    .about-section .col-md-6 img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    .about-section .social-icons {
+        flex-direction: row;
+        gap: 15px;
+    }
+
+    .social-icon {
+        font-size: 25px;
+    }
+    .collapse{
+        background-color:whitesmoke;
+        text-align: center;
     }
 }
