@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function() {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           entry.target.classList.add('animate');
-          console.log(entry.target.classList); // Add this line for debugging
+          console.log(entry.target.classList);
         }
       });
     }, { threshold: 0.3 }); 
@@ -18,4 +18,4 @@ const observer = new IntersectionObserver((entries) => {
             entry.target.classList.add('animate');
         }
     });
-}, { threshold: 0.5 });  // Increased threshold to 0.5 for earlier detection
+}, { threshold: 0.5 });  
