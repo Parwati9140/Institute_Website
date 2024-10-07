@@ -280,8 +280,8 @@ p{
 
 .social-icon {
     text-decoration: none;
-    font-size: 24px;
-    color: black;
+    font-size: 30px;
+    color: #fb9595;
 }
 
 
@@ -377,18 +377,19 @@ p{
 .footer {
     background-color: #f8f9fa;
     color: #333;
-    padding: 50px;
+    padding: 30px;
     animation: fadeIn 1.5s ease;
 }
 
 .footer-logo {
-    max-width: 150px;
+    max-width: 170px;
 }
 
 .footer-heading {
     font-size: 1.2rem;
     font-weight: bold;
     margin-bottom: 1rem;
+    color: #ff6666;
 }
 
 .footer p {
