@@ -246,6 +246,12 @@ body, html {
     height: auto;
     animation: fadeIn 2s ease-in;
 }
+.n{
+    color:#ff6666;
+}
+p{
+    color: grey;
+}
 
 /* Button Hover Effect */
 .btn {
@@ -262,17 +268,29 @@ body, html {
     0%, 100% { transform: scale(1); }
     50% { transform: scale(1.05); }
 }
-/* Social Icons Styling */
+
+
+/* Social icon styling */
 .social-icons {
     display: flex;
-    gap: 20px;
     flex-direction: column;
+    align-items: center;
+    gap: 10px;
 }
 
 .social-icon {
-    font-size: 30px;
-    color: #333; 
-    transition: color 0.3s ease;
+    text-decoration: none;
+    font-size: 24px;
+    color: black;
+}
+
+
+
+/* Add spacing between the icons and the text */
+.social-icons h3 {
+    margin-top: 5px;
+    font-size: 16px;
+    margin: 0;
 }
 
 .social-icon:hover {
@@ -532,6 +550,97 @@ body, html {
         object-fit: cover; 
     }
     .contact-section {
+        padding: 70px; 
+        font-size: 0.9rem; 
+        display: block;
+        margin-bottom: 20px;
+    }
+
+    .contact-form {
+        padding: 20px;
+        font-size: 0.9rem; 
+    }
+    .about-section .row {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+    }
+
+    .about-section .col-md-5 {
+        padding-top: 20px;
+        text-align: center;
+    }
+
+    .about-section .col-md-6 img {
+        width: 100%;
+        height: auto;
+     
+    }
+
+    .about-section .social-icons {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .social-card {
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .social-icon {
+        font-size: 25px;
+    }
+    .n{
+        color:#ff6666;
+    }
+    .social-icon:hover {
+        color: #fb9595; /* Customize the hover color */
+    }
+    .collapse{
+        background-color:whitesmoke;
+        padding: 20px;
+    }
+    .contact-details {
+        flex-direction: column;
+        text-align: center;
+        border-radius: 10px;
+        margin-top: 10px;
+        background-color: white;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.622);
+    }
+
+    .contact-details i {
+        font-size: 45px; /* Increase icon size */
+        margin-top: 7px;
+        margin-bottom: 10px; /* Add spacing between icon and text */
+        
+    }
+
+    .contact-details p {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: grey;
+    }
+    .contact-details h3{
+      color: #ff6666;
+    }
+    .close {
+        position: absolute;
+        top: 100px;
+        right: 15px;
+        color: rgba(255, 166, 0, 0.69);
+        font-size: 24px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+}
+@media (max-width: 1045px) {
+    .contact-section {
         padding: 20px; 
         font-size: 0.9rem; 
         display: block;
@@ -557,19 +666,41 @@ body, html {
     .about-section .col-md-6 img {
         width: 100%;
         height: auto;
-        margin-bottom: 20px;
+     
     }
 
     .about-section .social-icons {
-        flex-direction: row;
+        flex-direction: column;
         gap: 15px;
     }
+  
+    .contact-details {
+        flex-direction: column;
+        text-align: center;
+        border-radius: 10px;
+        margin-top: 10px;
+        background-color: white;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.622);
+    }
 
-    .social-icon {
-        font-size: 25px;
+    .contact-details i {
+        font-size: 45px; /* Increase icon size */
+        margin-top: 7px;
+        margin-bottom: 10px; /* Add spacing between icon and text */
+        
     }
-    .collapse{
-        background-color:whitesmoke;
-        padding: 20px;
+
+    .contact-details p {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: grey;
     }
+    .contact-details h3{
+      color: #ff6666;
+    }
+    .social-icon:hover {
+        color: #fb9595; /* Customize the hover color */
+    }
+ 
 }
