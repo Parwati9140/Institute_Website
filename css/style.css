@@ -598,7 +598,7 @@ p{
         color:#ff6666;
     }
     .social-icon:hover {
-        color: #fb9595; /* Customize the hover color */
+        color: #fb9595; 
     }
     .collapse{
         background-color:whitesmoke;
@@ -614,9 +614,9 @@ p{
     }
 
     .contact-details i {
-        font-size: 45px; /* Increase icon size */
+        font-size: 45px; 
         margin-top: 7px;
-        margin-bottom: 10px; /* Add spacing between icon and text */
+        margin-bottom: 10px; 
         
     }
 
@@ -684,9 +684,9 @@ p{
     }
 
     .contact-details i {
-        font-size: 45px; /* Increase icon size */
+        font-size: 45px; 
         margin-top: 7px;
-        margin-bottom: 10px; /* Add spacing between icon and text */
+        margin-bottom: 10px;
         
     }
 
@@ -700,7 +700,7 @@ p{
       color: #ff6666;
     }
     .social-icon:hover {
-        color: #fb9595; /* Customize the hover color */
+        color: #fb9595;
     }
  
 }
